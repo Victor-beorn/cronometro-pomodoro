@@ -16,7 +16,7 @@
     font-weight: bold;
     color: var(--primary);
     padding-top: 3.2rem;
-    transition: all 3ms ease;
+    transition: all  0.1s ease;
 }
 
 .logoLink:hover{

@@ -6,8 +6,7 @@ text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 7rem;
-  width: 8rem;
+  gap: 1rem;
 }
 
 .dot{
@@ -20,8 +19,12 @@ text-align: center;
 
 .workTime{
   background-color: var(--warning);
-  border-radius: 50%;
-  width: 2rem;
-  height: 2rem;
-  margin-top: 1.5rem;
+}
+
+.shortBreak{
+  background-color: var(--success);
+}
+
+.longBreak{
+  background-color: var(--info);
 }
