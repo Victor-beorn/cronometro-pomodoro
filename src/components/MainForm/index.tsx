@@ -5,9 +5,15 @@ import { CirclePlay } from 'lucide-react';
 
 import styles from './styles.module.css';
 
+
 export function MainForm() {
+
+  function handleCreateNewTask(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+  }
+
   return (
-    <form className={styles.form} action=''>
+    <form onSubmit={handleCreateNewTask} className={styles.form} action=''>
       <div className={styles.formRow}>
         <Input
           labelText='Task:'

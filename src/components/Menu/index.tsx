@@ -17,7 +17,6 @@ export function Menu() {
 
   function handleThemeChenge(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,) {
     event.preventDefault();
-    console.log('Clicado', Date.now());
     setTheme(prevTheme => {
       const nextTheme = prevTheme === 'dark' ? 'light' : 'dark'
       return nextTheme;
