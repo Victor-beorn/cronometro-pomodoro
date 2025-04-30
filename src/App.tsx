@@ -1,50 +1,24 @@
-import { CirclePlay } from 'lucide-react';
-import { Container } from './components/Container';
-import { CountDown } from './components/CountDown';
-import { Cycles } from './components/Cycles';
-import { DefaultButton } from './components/DefaultButton';
-import { Footer } from './components/Footer';
-import { Input } from './components/Input';
-import { Logo } from './components/Logo';
-import { Menu } from './components/Menu';
-
+import { useState } from 'react';
+import { Home } from './Pages/Home';
+import { TaskStateModel } from './Models/TaskStateModel';
 import './styles/global.css';
 import './styles/themes.css';
 
+const initialState: TaskStateModel = {
+  tasks: [],
+  secondsRemaining: 0,
+  formattedSecondsRemaining: '00:00',
+  activeTask: null,
+  currentCycle: 0,
+  config: {
+    workTime: 25,
+    shortBreakTime: 5,
+    longBreakTime: 15,
+  },
+};
+
 export function App() {
-  return (
-    <>
-      <Container>
-        <Logo />
-      </Container>
-      <Container>
-        <Menu />
-      </Container>
-      <Container>
-        <CountDown />
-      </Container>
-      <Container>
-        <form className='form' action="">
-          <div className="formRow">
-            <Input labelText='Task:' id='meuInput' type="text" placeholder='Tarefa'/>
-          </div>
+  const [state, setState] = useState( initialState );
 
-          <div className="formRow">
-            <p>Neste ciclo foque por 25 min.</p>
-          </div>
-
-          <div className="formRow">
-            <Cycles/>
-          </div>
-
-          <div className="formRow">
-            <DefaultButton icon={<CirclePlay />}/>
-          </div>
-        </form>
-      </Container>
-      <Container>
-        <Footer/>
-      </Container>
-    </>
-  );
+  return <Home state={state} setState={setState}/>;
 }
