@@ -1,4 +1,4 @@
-import { TaskModel } from '../models/TaskModel';
+import { TaskModel } from '../Models/TaskModel';
 
 export function getTaskStatus(task: TaskModel, activeTask: TaskModel | null) {
   if (task.completeDate) return 'Completa';
