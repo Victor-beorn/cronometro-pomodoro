@@ -112,7 +112,6 @@ export function History() {
                     shortBreakTime: 'Descanso curto',
                     longBreakTime: 'Descanso longo',
                   };
-
                   return (
                     <tr key={task.id}>
                       <td>{task.name}</td>
@@ -127,7 +126,6 @@ export function History() {
             </table>
           </div>
         )}
-
         {!hasTasks && (
           <p style={{ textAlign: 'center', fontWeight: 'bold' }}>
             Ainda não existem tarefas criadas.
