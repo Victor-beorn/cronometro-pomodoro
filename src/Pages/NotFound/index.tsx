@@ -1,8 +1,8 @@
-import { Container } from '../../../components/Container';
-import { GenericHtml } from '../../../components/GenericHtml';
-import { Heading } from '../../../components/Heading';
-import { RouterLink } from '../../../components/routerLink';
-import { MainTemplate } from '../../../templates/MainTemplate';
+import { Container } from '../../components/Container';
+import { GenericHtml } from '../../components/GenericHtml';
+import { Heading } from '../../components/Heading';
+import { RouterLink } from '../../components/routerLink';
+import { MainTemplate } from '../../templates/MainTemplate';
 
 export function NotFaund() {
   return (

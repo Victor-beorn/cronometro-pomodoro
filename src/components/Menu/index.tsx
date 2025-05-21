@@ -43,7 +43,7 @@ export function Menu() {
         <House />
       </RouterLink>
       <RouterLink
-        href='/historico/'
+        href='/history/'
         className={styles.menuLink}
         aria-label='Ver Historico'
         title='Ver Historico'
@@ -51,7 +51,7 @@ export function Menu() {
         <TimerReset />
       </RouterLink>
       <RouterLink
-        href='/configuracao/'
+        href='/settings/'
         className={styles.menuLink}
         aria-label='Ir para a Configuração'
         title='Ir para a Configuração'
