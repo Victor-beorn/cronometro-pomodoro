@@ -22,7 +22,7 @@ export function MainRouter() {
         <Route path='/' element={<Home />} />
         <Route path='/history/' element={<History />} />
         <Route path='/settings/' element={<Settings />} />
-        <Route path='/about-pomodoro/' element={<About />} />
+        <Route path='/sobre-pomodoro/' element={<About />} />
         <Route path='*' element={<NotFaund />} />
       </Routes>
       <ScrollToTop />
